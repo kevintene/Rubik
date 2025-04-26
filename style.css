@@ -1,0 +1,203 @@
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('font/cabin-v27-latin-regular.woff2') format('woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('font/cabin-v27-latin-500.woff2') format('woff2');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('font/cabin-v27-latin-600.woff2') format('woff2');
+    font-weight: 600;
+}
+
+    
+@font-face {
+    font-family: 'Rubik';
+    src: url('font/cabin-v27-latin-700.woff2') format('woff2');
+    font-weight: 700;
+}
+
+
+
+
+/* CSS Inizia Qui! */
+
+body {
+    margin: 0;
+}
+
+/* HEADER */
+
+section {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header {
+    height: 120px;
+    width: 100%;
+    position: sticky;
+    backdrop-filter: blur(25px);
+    background: rgba(255, 255, 255, 0.01);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 90px;
+    padding-right: 90px;
+    z-index: 99;
+}
+
+.left {
+    margin-right: auto;
+}
+
+/* NAV HOVER */
+
+.right:hover {
+    color: #3535355d;
+}
+
+a:visited {
+    text-decoration: none !important;
+}
+
+.line {
+    height: 1px;
+    width: 95%;
+    background: #121212;
+    position: sticky;
+    top: 120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+/* HERO */
+
+main {
+    font-size: 200px;
+    text-align: center;
+    background: linear-gradient(90deg, #ffffef, #efd1f0);
+    box-sizing: border-box;
+    height: 900px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    top: 0px;
+    position: absolute;
+    width: 100%;
+}
+
+h2 {
+    color: #121212;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+div {
+    color: #121212;
+    font-family: "Rubik";
+    font-size: 400px; 
+    font-weight: 600;
+    margin-left: 70px;
+}
+
+/* Fantasma siccome il main è fixed */
+
+.ghost {
+    height: 760px;
+    z-index: 1;
+}
+
+/* SECTION */
+
+.about {
+    height: 900px;
+    width: 100%;
+    background-image: url(sfondo.jpg);
+    background-size: 200%;
+    z-index: 2;
+    transition: background-size 3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 130px;
+}
+
+.about:hover {
+    background-size: 220%;
+}
+
+.copy1 {
+    width: 200px;
+    height: 450px;
+    background-color: #efd1f0;
+    z-index: 10101;
+    border-radius: 20px;
+    transition: transform 1s;
+}
+
+h1 {
+    color: #efd1f0;
+    font-size: 200px;
+    transition: color 1s, transform 1s;
+}
+
+.copy1:hover {
+    transform: scale(0.5) rotate(95deg);
+    box-shadow: 3px 3px 5px #2222220c;
+}
+
+h1:hover {
+    color: #efd1f000;
+    transform: translateY(-100px) rotate(230deg) scale(2.4);
+}
+
+.portfolio {
+    background-image: url(mac.png);
+    height: 1100px;
+    background-size: 90%;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    gap: 250px;
+    position: relative;
+}
+
+h3 {
+    font-size: 40px;
+    text-shadow: 3px 3px 5px #12121259;
+}
+
+.Theend {
+    height: 900px;
+    position: relative;
+    z-index: 5;
+    background-color: #121212;
+}
+
+footer {
+    height: 300px;
+    background-color: #efd1f0;
+    z-index: 15;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aqua;
+}
